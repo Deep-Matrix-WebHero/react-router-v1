@@ -9,6 +9,8 @@ import Header from "./components/Header/Header";
 import FriendDetails from "./components/FriendDetails/FriendDetails";
 import Culture from "./components/Culture/Culture";
 import PostDetail from "./components/PostDetail/PostDetail";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -42,6 +44,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
 
       {/* <BrowserRouter>

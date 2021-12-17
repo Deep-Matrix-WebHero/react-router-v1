@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import {Button} from "react-bootstrap";
 import {useHistory} from "react-router-dom";
 import {useParams} from "react-router-dom";
 
@@ -36,7 +37,10 @@ const FriendDetails = () => {
       {/* optional chaining use */}
       <h5>City name: {friend.address?.city}</h5>
       {/* button use by using handler & history from documentation */}
-      <button onClick={handleClick}>See All friends</button>
+      {/* <button onClick={handleClick}>See All friends</button> */}
+      <Button variant="outline-danger" onClick={handleClick}>
+        See All friends
+      </Button>
     </div>
   );
 };
