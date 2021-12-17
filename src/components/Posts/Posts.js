@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import {Row} from "react-bootstrap";
 import Post from "../Post/Post";
 const Posts = () => {
   const [posts, setPosts] = useState([]);
@@ -9,9 +10,11 @@ const Posts = () => {
   }, []);
   return (
     <div>
-      {posts.map((post) => (
-        <Post post={post}></Post>
-      ))}
+      <Row xs={1} md={2} className="g-4">
+        {posts.map((post) => (
+          <Post post={post}></Post>
+        ))}
+      </Row>
     </div>
   );
 };

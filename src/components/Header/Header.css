@@ -6,6 +6,9 @@
   padding: 20px;
   margin: 10px;
 } */
+.nav-button {
+  display: inline-block;
+}
 #home {
   padding: 20px;
 }

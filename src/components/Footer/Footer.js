@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -6,7 +7,7 @@ const Footer = () => {
       <hr />
       <div className="row">
         <p className="col-sm">
-          &copy;{new Date().getFullYear()}|Ataur Rahman|All Right Reserved
+          &copy;AtaurRahman {new Date().getFullYear()}|All Right Reserved
         </p>
       </div>
     </div>

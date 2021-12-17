@@ -6,11 +6,11 @@ import {Link} from "react-router-dom";
 const Friend = (props) => {
   const {name, website, email, phone, address, id} = props.friend;
   const history = useHistory();
-  const style = {
-    border: "3px solid goldenrod",
-    padding: "10px",
-    borderRadius: "10px",
-  };
+  // const style = {
+  //   border: "3px solid goldenrod",
+  //   padding: "10px",
+  //   borderRadius: "10px",
+  // };
   const url = `/friend/${id}`;
   const clickHandler = () => {
     history.push(url);
@@ -45,6 +45,9 @@ const Friend = (props) => {
           </Card.Title>
           <Card.Text>
             <h5>City name: {address.city}</h5>
+          </Card.Text>
+          <Card.Text>
+            <h5>{website}</h5>
           </Card.Text>
         </Card.Body>
         <Button variant="outline-success" onClick={clickHandler}>
