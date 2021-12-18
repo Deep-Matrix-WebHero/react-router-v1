@@ -28,10 +28,10 @@ const Post = (props) => {
             <Card.Title>
               <h2>{title} </h2>
               <h2>{body} </h2>
-              <h2>{id} </h2>
+              <h2>{id}</h2>
             </Card.Title>
           </Card.Body>
-          <Button variant="outline-secondary" onClick={handleClick}>
+          <Button variant="outline-primary" onClick={handleClick}>
             Post Details
           </Button>
         </Card>

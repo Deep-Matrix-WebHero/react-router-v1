@@ -11,6 +11,7 @@ import Culture from "./components/Culture/Culture";
 import PostDetail from "./components/PostDetail/PostDetail";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer/Footer";
+import Posts from "./components/Posts/Posts";
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route exact path="/">
             <Home></Home>
+          </Route>
+          <Route path="/posts">
+            <Posts></Posts>
           </Route>
           <Route path={`/post/:postID`}>
             <PostDetail></PostDetail>

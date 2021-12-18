@@ -48,6 +48,9 @@ const Header = () => {
             <NavLink to="/about/culture" id="culture">
               <Button variant="outline-success">Culture</Button>
             </NavLink>
+            <NavLink to="/posts" id="posts">
+              <Button variant="outline-success">Posts</Button>
+            </NavLink>
           </Nav>
         </Container>
       </Navbar>

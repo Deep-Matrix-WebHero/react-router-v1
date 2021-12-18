@@ -1,7 +1,7 @@
 import React from "react";
 import {Button, Card, Col} from "react-bootstrap";
 import {useHistory} from "react-router-dom";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 const Friend = (props) => {
   const {name, website, email, phone, address, id} = props.friend;
@@ -42,13 +42,11 @@ const Friend = (props) => {
         <Card.Body>
           <Card.Title>
             <h2>my name is:{name} </h2>
-          </Card.Title>
-          <Card.Text>
             <h5>City name: {address.city}</h5>
-          </Card.Text>
-          <Card.Text>
-            <h5>{website}</h5>
-          </Card.Text>
+            <h5>my website: {website}</h5>
+            <h4>contact with me via :{email}</h4>
+            <h4>call me :{phone}</h4>
+          </Card.Title>
         </Card.Body>
         <Button variant="outline-success" onClick={clickHandler}>
           Visit me
